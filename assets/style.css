@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --primary-color: #3B93E3;
+    --secoundry-color: #063865;
+    --white-color: #FFFFFF;
+    --black-color: #000;
+    --font-poppins: "Poppins", serif;
+}
+
+::selection {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.section-y {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.topBar {
+    background-color: var(--primary-color);
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+
+
+}
+
+.topBar ul li {
+    font-size: clamp(8px, 3vw, 12px);
+}
+
+.topBar ul li i {
+    font-size: clamp(12px, 3vw, 17px);
+
+}
+
+.navbar-brand img {
+    width: clamp(100px, 5vw, 300px);
+}
+
+.nav-link {
+    color: var(--white-color);
+    font-size: clamp(12px, 3vw, 18px);
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border-radius: 15px;
+
+}
+
+.navbar-brand img {
+    width: clamp(70px, 10vw, 200px);
+}
+
+.navbar-toggler-icon {
+    filter: contrast(0.1);
+}
+
+.navbar-toggler {
+    padding: 5px;
+    border-color: var(--secoundry-color);
+}
+
+.bannerContent h1 {
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    /* font-size: 56px; */
+    font-size: clamp(27px, 5vw, 56px);
+    color: var(--primary-color);
+}
+
+.bannerContent p {
+    color: var(--white-color);
+    font-size: clamp(12px, 3vw, 20px);
+    font-family: var(--font-poppins);
+
+}
+
+.btnRirst {
+    background-color: var(--primary-color);
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    color: var(--white-color);
+    font-size: clamp(14px, 3vw, 22px);
+
+}
+
+.btnRirst:hover {
+    background-color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+.btn-transparent {
+    background-color: transparent;
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    font-size: clamp(14px, 3vw, 22px);
+
+}
+
+.secoundSec p {
+    font-family: var(--font-poppins);
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: 400;
+    color: var(--secoundry-color);
+}
+
+.ourContent h2 {
+    color: var(--white-color);
+    font-weight: 900;
+    font-family: var(--font-poppins);
+    font-size: clamp(18px, 5vw, 56px);
+}
+
+.ourContent h6 {
+    color: var(--white-color);
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    font-size: clamp(15px, 3vw, 30px);
+
+}
+
+.ourSec p {
+    color: var(--white-color);
+    font-weight: 400;
+    font-family: var(--font-poppins);
+    font-size: clamp(15px, 2vw, 19px);
+
+}
+
+.ourTrucksSec h3 {
+    font-size: clamp(18px, 5vw, 56px);
+    font-family: var(--font-poppins);
+    font-weight: 900;
+    color: var(--secoundry-color);
+}
+.ourTrucksSec p {
+    font-size: clamp(15px, 2vw, 19px);
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    color: var(--secoundry-color);
+}
+
+.swiper-slide{
+    text-align: center;
+}
+.parentImg{
+    position: relative;
+    overflow: hidden;
+}
+.contentImg{
+position: absolute;
+bottom: -100%;
+padding-top: 20px ;
+color: #FFFFFF;
+font-family: var(--font-poppins);
+font-weight: 900;
+font-size: clamp(18px, 5vw, 30px);
+font-size: clamp(15px, 2vw, 19px);
+
+opacity: 0;
+background-color: rgba(0, 0, 0, 0.6);
+width: 100%;
+height: 100%;
+transition: all 0.5s;
+border-top: 2px solid var(--secoundry-color);
+
+}
+.btnPosition{
+    position: absolute;
+    bottom: 25px;
+    left: 63px;
+opacity: 0;
+transition: all 0.5s;
+
+
+}
+.btnColor{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: bold;
+font-family: var(--font-poppins);
+}
+.btnColor:hover{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+.parentImg:hover .contentImg {
+    bottom: 0;
+   opacity: 1;
+   overflow: hidden;
+}
+
+.parentImg:hover .btnPosition {
+    bottom: 20px;
+   opacity: 1;
+}
+/* .parentImg{
+    box-shadow: 1px 1px 20px rgb(128, 122, 122);
+    border: 2px solid black;
+} */
+ .whyContent p{
+    font-family: var(--font-poppins);
+   font-weight: 500;
+   line-height: 30px;
+   color: var(--secoundry-color);
+font-size: clamp(15px, 2vw, 22px);
+
+ }
+ .whyContent ul li{
+font-family: var(--font-poppins);
+font-size: clamp(15px, 2vw, 19px);
+color: var(--secoundry-color);
+
+ }
+.whyChoosUs h1{
+    font-family: var(--font-poppins);
+    font-weight: 900;
+    color: var(--secoundry-color);
+    text-align: center;
+}
+.btn-truck{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.contactTruck h1{
+    font-family: var(--font-poppins);
+    font-weight: 900;
+    color: var(--white-color);
+    font-size: clamp(25px, 5vw, 56px);
+}
+.contactTruck p{
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    color: var(--white-color);
+    font-size: clamp(15px, 3vw, 19px);
+}
+.ourFaq{
+    background-color: var(--primary-color);
+
+}
+.ourFaq h1{
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-weight: 900;
+    font-size: clamp(25px, 5vw, 56px); 
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.accordion-item{
+    background-color: var(--primary-color);
+    
+}
+.accordion-button{
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-size: clamp(15px, 3vw, 19px);
+    font-weight: 400;
+    background-color: var(--primary-color);
+    padding: 20px 20px 20px 5px;
+
+} 
+.accordion-button::after{
+    filter: invert(1);
+    width: 20px;
+}
+.accordion-header{
+    background-color: var(--primary-color);
+    
+}
+.collapsed{
+    background-color: var(--primary-color);
+    
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--secoundry-color);
+    color: var(--white-color);
+}
+.demo{
+    border-top: 2px solid var(--white-color);
+   
+}
+.demo-bot{
+ border-bottom: 2px solid var(--white-color);
+}
+.footerSac{
+    background-color: var(--primary-color);
+}
+.footer-nav li a{
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+}
+.footer-brand img{
+    width: 250px;
+    height: 250px;
+}
+.ourContentAbout h2 {
+    color: var(--secoundry-color);
+    font-weight: 900;
+    font-family: var(--font-poppins);
+    font-size: clamp(18px, 5vw, 56px);
+}
+
+.ourContentAbout h6 {
+    color: var(--secoundry-color);
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    font-size: clamp(15px, 3vw, 30px);
+
+}
+.bgAbout{
+    background-color: var(--secoundry-color);
+}
