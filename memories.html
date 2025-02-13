@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jonesboard ARK Ansas</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,7 +13,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- <link rel="stylesheet" href="assets/bootstrep.js"> -->
   <!-- Link Swiper's CSS -->
-   
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
 
@@ -43,8 +44,8 @@
       </div>
     </div>
   </section>
-  <section class="imageBanner pt-1 main"
-    style="background-image: url('assets/images/conBanner.png'); background-repeat: no-repeat; background-size: cover; object-fit: contain; height: 100%;">
+  <section class="imageBanner pt-1"
+    style="background-image: url('assets/images/memoBn.png'); background-repeat: no-repeat; background-size: cover; object-fit: contain; height: 708px;">
 
     <header>
       <nav class="navbar navbar-expand-md">
@@ -66,11 +67,11 @@
               </li>
               <li style="font-size: 25px; color: white;" class="d-none d-lg-block"> | </li>
               <li class="nav-item">
-                <a class="nav-link text-center active" href="contact-us.html">CONTACT US</a>
+                <a class="nav-link text-center" href="contact-us.html">CONTACT US</a>
               </li>
               <li style="font-size: 25px; color: white;" class="d-none d-lg-block"> | </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="memories.html">MEMORIES</a>
+                <a class="nav-link text-center active" href="memories.html">MEMORIES</a>
               </li>
 
             </ul>
@@ -84,77 +85,40 @@
         <div class="row align-items-center">
           <div class="col-lg-7 my-5">
             <div class="bannerContent py-4">
-              <h1>Contact Us</h1>
+              <h1>Memories</h1>
             </div>
             <div class="bannerBtn pb-5">
               <a href="#" class="btn btnCont px-5 me-3 mb-3 mb-sm-0">GET A QUOTE</a>
               <a href="#" class="btn transparent px-5 mb-3 mb-sm-0">BOOK NOW</a>
             </div>
           </div>
-          <div class="col-md-5">
-            <img src="assets/images/banner-Boy.png" alt="" class="img-fluid bannerBoy d-none d-lg-block">
-          </div>
         </div>
-      </div>
     </section>
   </section>
 
-  <section>
+  <section class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="contactSe my-5">
-            <p>Hello there! If you have any questions for our team,
-              kindly fill out the form below and we'll get back to you
-              as soon as possible. <span class="fw-bold"> Thank You! </span></p>
-            <p>Read our Privacy Policy for further information on the
-              processing of your personal data.</p>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <figure>
+            <img src="assets/images/memoriesSec.png" alt="" class="img-fluid">
+          </figure>
+        </div>
+        <div class="col-md-6">
+
+          <div class="memoriesContent">
+            <h1 class="mb-3">In the Memory Of <br>
+              (his name)</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et ornare dui. Praesent ac interdum
+              magna, et commodo nisl. Duis sit amet scelerisque mi. Nam mattis ut sapien et pellentesque. Etiam
+              convallis urna odio, tristique suscipit mi rhoncus porttitor. Suspendisse suscipit lacinia suscipit. Cras
+              fringilla, justo eu faucibus rutrum, orci velit maximus ligula, ac molestie felis arcu sit amet dui. In
+              auctor, lacus ut dignissim sagittis, tellus lectus viverra diam, vitae pharetra urna libero eget orci.
+              Donec blandit magna id nibh rhoncus laoreet. Phasellus fermentum accumsan quam, in tempus nunc placerat
+              et.</p>
           </div>
         </div>
       </div>
-      <form id="myForm" action="thank-you.html" method="get" onsubmit="return validateForm()">
-        <div class="row">
-            <div class="col-lg-10 col-12 mb-3">
-                <input class="form-control shadow-sm bg-body-tertiary" type="email" placeholder="Email*" id="email" name="email" autocomplete="email">
-            </div>
-            <div class="col-lg-5 col-12 mb-3">
-                <input class="form-control shadow-sm bg-body-tertiary" type="text" placeholder="First Name*" id="fname" name="fname" autocomplete="given-name">
-            </div>
-            <div class="col-lg-5 col-12 mb-3">
-                <input class="form-control shadow-sm bg-body-tertiary" type="text" placeholder="Last Name*" id="lname" name="lname" autocomplete="family-name">
-            </div>
-        </div>
-        <div class="col-lg-10 col-12 mb-3">
-          <input type="tel" id="phone" name="phone" placeholder="Enter phone number" autocomplete="tel"class="form-control shadow-sm bg-body-tertiary" >
-
-            <!-- <input class="form-control shadow-sm bg-body-tertiary" type="tel" placeholder="Phone Number*" id="phone" name="phone" autocomplete="tel"> -->
-        </div>
-        <div class="col-lg-10 col-12  mb-3">
-            <input class="form-control shadow-sm bg-body-tertiary" type="text" placeholder="Country Name*" id="cname" name="cname" autocomplete="country-name">
-        </div>
-        <div class="col-lg-10 col-12 mb-3">
-            <input class="form-control shadow-sm bg-body-tertiary" type="text" placeholder="State/Region*" id="state" name="state" autocomplete="region">
-        </div>
-        <div class="col-lg-10 col-12 mb-3">
-            <label for="exampleDataList" class="form-label">Type of inquiry</label>
-            <input class="form-control shadow-sm bg-body-tertiary" list="datalistOptions" id="exampleDataList" placeholder="Please Select" name="exampleDataList" autocomplete="off">
-            <datalist id="datalistOptions">
-                <option value="San Francisco">
-                <option value="New York">
-                <option value="Seattle">
-                <option value="Los Angeles">
-                <option value="Chicago">
-            </datalist>
-        </div>
-        <div class="col-lg-10 col-12 mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control shadow-sm bg-body-tertiary" id="exampleFormControlTextarea1" rows="3" name="exampleFormControlTextarea1" autocomplete="off"></textarea>
-        </div>
-        <div class="bannerBtns pb-5">
-            <button  onclick="validatePhone()" type="submit" class="btn btnCont px-5 me-3 mt-4">SUBMIT</button>
-        </div>
-    </form>
-
     </div>
   </section>
 
@@ -222,6 +186,8 @@
       </div>
     </div>
   </section>
+
+
   <footer class="footerSac">
     <div class="container">
       <div class="row align-items-center">
@@ -246,72 +212,7 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
-  
-  <script>
-    // Initialize intl-tel-input
-    var input = document.querySelector("#phone");
-    var iti = intlTelInput(input, {
-      initialCountry: "us", // Default country
-      preferredCountries: ['us', 'in', 'gb'], // List of preferred countries
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-    });
-  
-    // Restrict phone input to only digits
-    input.addEventListener("input", function () {
-      // Replace any non-numeric characters with empty string
-      input.value = input.value.replace(/[^\d]/g, "");
-    });
-  
-    // Form validation function
-    function validateForm() {
-      let isValid = true;
-  
-      // List of fields to check
-      const fields = [
-        { id: 'email', name: 'Email' },
-        { id: 'fname', name: 'First Name' },
-        { id: 'lname', name: 'Last Name' },
-        { id: 'phone', name: 'Phone Number' },
-        { id: 'cname', name: 'Country Name' },
-        { id: 'state', name: 'State/Region' },
-        { id: 'exampleDataList', name: 'Type of Inquiry' },
-        { id: 'exampleFormControlTextarea1', name: 'Message' }
-      ];
-  
-      // Reset all borders
-      fields.forEach(field => {
-        document.getElementById(field.id).classList.remove('invalid');
-      });
-  
-      // Check each field
-      fields.forEach(field => {
-        const input = document.getElementById(field.id);
-        if (!input.value.trim()) {
-          isValid = false;
-          input.classList.add('invalid');
-          console.log(`${field.name} is invalid!`);
-        }
-      });
-  
-      // Phone number validation (check if it's valid and 10 digits long)
-      var phoneNumber = iti.getNumber(); // Get full phone number (including country code)
-      
-      // Extract local number without country code
-      var localNumber = iti.getNumber(intlTelInputUtils.numberFormat.NATIONAL).replace(/[^\d]/g, "");
-  
-      // Check if number is valid and has only digits, with length 10
-      if (!iti.isValidNumber() || localNumber.length !== 10) {
-        isValid = false;
-        input.classList.add('invalid');
-        console.log("Phone number is invalid or not 10 digits!");
-      }
-  
-      // If the form is valid, it will submit. If not, it stops submission.
-      return isValid;
-    }
-  </script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
