@@ -1,0 +1,752 @@
+@import '_vendor';
+@import 'variables';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+::selection {
+    background-color: $secoundry-color;
+    color: $white-color;
+}
+
+.section-y {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.topBar {
+    background-color: $primary-color;
+    font-size: 12px;
+    line-height: 18px;
+    color: $white-color;
+    font-family: $font-poppins;
+
+
+}
+
+.topBar ul li {
+    font-size: clamp(8px, 3vw, 12px);
+}
+
+.topBar ul li i {
+    font-size: clamp(12px, 3vw, 17px);
+
+}
+
+.navbar-brand img {
+    width: clamp(100px, 5vw, 300px);
+}
+
+.nav-link {
+    color: $white-color;
+    font-size: clamp(12px, 3vw, 18px);
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+
+.active.nav-link {
+
+    background-color: $white-color;
+    border-radius: 15px;
+    color: $white-color;
+}
+
+.nav-link:hover {
+    color: #3B93E3 !important;
+}
+
+.navbar-brand img {
+    width: clamp(70px, 10vw, 200px);
+}
+
+.navbar-toggler-icon {
+    filter: contrast(0.1);
+}
+
+.navbar-toggler {
+    padding: 5px;
+    border-color: $secoundry-color;
+}
+
+.bannerContent h1 {
+    font-family: $font-poppins;
+    font-weight: 900;
+    font-size: clamp(27px, 5vw, 56px);
+    color: $primary-color;
+}
+
+.bannerContent p {
+    color: $white-color;
+    font-size: clamp(12px, 3vw, 20px);
+    font-family: $font-poppins;
+
+}
+
+.bannerContent p span a {
+    color: $primary-color;
+    font-size: clamp(12px, 3vw, 20px);
+    font-family: $font-poppins;
+
+}
+
+
+
+
+
+
+
+
+.secoundSec p {
+    font-family: $font-poppins;
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: 400;
+    color: $secoundry-color;
+}
+
+.ourContent h2 {
+    color: $white-color;
+    font-weight: 900;
+    font-family: $font-poppins;
+    font-size: clamp(18px, 5vw, 56px);
+}
+
+.ourContent h6 {
+    color: $white-color;
+    font-weight: 600;
+    font-family: $font-poppins;
+    font-size: clamp(15px, 3vw, 30px);
+
+}
+
+.ourSec p {
+    color: $white-color;
+    font-weight: 400;
+    font-family: $font-poppins;
+    font-size: clamp(15px, 2vw, 19px);
+
+}
+
+.ourTrucksSec h3 {
+    font-size: clamp(18px, 5vw, 56px);
+    font-family: $font-poppins;
+    font-weight: 900;
+    color: $secoundry-color;
+}
+
+.ourTrucksSec p {
+    font-size: clamp(15px, 2vw, 19px);
+    font-family: $font-poppins;
+    font-weight: 400;
+    color: $secoundry-color;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.parentImg {
+    position: relative;
+    overflow: hidden;
+}
+
+.contentImg {
+    position: absolute;
+    bottom: -100%;
+    padding-top: 20px;
+    color: #FFFFFF;
+    font-family: $font-poppins;
+    font-weight: 900;
+    font-size: clamp(18px, 5vw, 30px);
+    font-size: clamp(15px, 2vw, 19px);
+
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    border-top: 2px solid $secoundry-color;
+
+}
+
+.btnPosition {
+    position: absolute;
+    bottom: 25px;
+    left: 63px;
+    opacity: 0;
+    transition: all 0.5s;
+
+
+}
+
+.btnColor {
+    background-color: $primary-color;
+    color: $white-color;
+    font-weight: bold;
+    font-family: $font-poppins;
+}
+
+.btnColor:hover {
+    background-color: $white-color;
+    color: $primary-color;
+}
+
+.parentImg:hover .contentImg {
+    bottom: 0;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.parentImg:hover .btnPosition {
+    bottom: 20px;
+    opacity: 1;
+}
+
+/* .parentImg{
+    box-shadow: 1px 1px 20px rgb(128, 122, 122);
+    border: 2px solid black;
+} */
+.whyContent p {
+    font-family: $font-poppins;
+    font-weight: 500;
+    line-height: 30px;
+    color: $secoundry-color;
+    font-size: clamp(15px, 2vw, 22px);
+
+}
+
+.whyContent ul li {
+    font-family: $font-poppins;
+    font-size: clamp(15px, 2vw, 19px);
+    color: $secoundry-color;
+
+}
+
+.whyChoosUs h1 {
+    font-family: $font-poppins;
+    font-weight: 900;
+    color: $secoundry-color;
+    text-align: center;
+}
+
+.btn-truck {
+    color: $white-color;
+    background-color: $primary-color;
+    font-size: clamp(15px, 3vw, 22px);
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+// .btn-truck:hover {
+//     color: $primary-color;
+//     background-color: $white-color;
+
+
+
+// }
+
+.contactTruck h1 {
+    font-family: $font-poppins;
+    font-weight: 900;
+    color: $white-color;
+    font-size: clamp(25px, 5vw, 56px);
+}
+
+.contactTruck p {
+    font-family: $font-poppins;
+    font-weight: 400;
+    color: $white-color;
+    font-size: clamp(15px, 3vw, 19px);
+}
+
+.ourFaq {
+    background-color: $primary-color;
+
+}
+
+.ourFaq h1 {
+    color: $white-color;
+    font-family: $font-poppins;
+    font-weight: 900;
+    font-size: clamp(25px, 5vw, 56px);
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.accordion-item {
+    background-color: $primary-color;
+
+}
+
+.accordion-button {
+    color: $white-color;
+    font-family: $font-poppins;
+    font-size: clamp(15px, 3vw, 19px);
+    font-weight: 400;
+    background-color: $primary-color;
+    padding: 20px 20px 20px 5px;
+
+}
+
+.accordion-button::after {
+    filter: invert(1);
+    width: 20px;
+}
+
+.accordion-header {
+    background-color: $primary-color;
+
+}
+
+.collapsed {
+    background-color: $primary-color;
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: $secoundry-color;
+    color: $white-color;
+}
+
+.demo {
+    border-top: 2px solid $white-color;
+
+}
+
+.demo-bot {
+    border-bottom: 2px solid $white-color;
+}
+
+.footerSac {
+    background-color: $primary-color;
+}
+
+.footer-nav li a {
+    color: $white-color;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer-brand img {
+    width: 250px;
+    height: 250px;
+}
+
+.ourAboutSec h2 {
+    color: $secoundry-color;
+    font-weight: 900;
+    font-family: $font-poppins;
+    font-size: clamp(32px, 5vw, 56px);
+    text-align: center;
+}
+
+.ourAboutSec h6 {
+    color: $secoundry-color;
+    font-weight: 600;
+    font-family: $font-poppins;
+    font-size: clamp(15px, 3vw, 30px);
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.topAboutSec {
+    background-color: $secoundry-color;
+
+}
+
+.sideTruck img {
+    /* margin-top: -96px; */
+    max-width: 100%;
+    height: auto;
+    /* max-width: 40%; */
+}
+
+.truckContent p {
+    font-family: $font-poppins;
+    font-weight: 500;
+    line-height: 33px;
+    color: $secoundry-color;
+    font-size: clamp(13px, 5vw, 20px);
+}
+
+.ourServices h2 {
+    color: $secoundry-color;
+    font-family: $font-poppins;
+    font-weight: 900;
+    font-size: clamp(32px, 5vw, 56px);
+    text-align: center;
+
+
+}
+
+.pickTruck h3 {
+    background-color: $secoundry-color;
+    color: $white-color;
+    font-family: $font-poppins;
+    font-weight: 900;
+    font-size: clamp(18px, 3vw, 46px);
+    position: relative;
+    height: 70px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+
+}
+
+.pickTruck h3::before {
+    content: '';
+    width: 171%;
+    position: absolute;
+    top: 0;
+    background-color: $secoundry-color;
+    height: 70px;
+    left: -171%;
+
+}
+
+.ourServices {
+    position: relative;
+}
+
+.doubleImg::after {
+    content: '';
+    width: 45%;
+    position: absolute;
+    top: 56%;
+    background-color: $secoundry-color;
+    height: 92px;
+    right: 0;
+    z-index: -1;
+}
+
+/* ##### Secound Section ###### */
+
+.ourServicesSec {
+    position: relative;
+}
+
+.doubleImgSEc::after {
+    content: '';
+    width: 45%;
+    position: absolute;
+    top: 37%;
+    background-color: $secoundry-color;
+    height: 92px;
+    left: 0;
+    z-index: -1;
+}
+
+.pickTruckSec h3 {
+    background-color: $secoundry-color;
+    color: $white-color;
+    font-family: $font-poppins;
+    font-weight: 900;
+    font-size: clamp(18px, 3vw, 32px);
+    position: relative;
+    height: auto;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    /* overflow: hidden; */
+}
+
+.ourServicesSec::after {
+    content: '';
+    width: 37%;
+    position: absolute;
+    top: 96px;
+    background-color: $secoundry-color;
+    height: 77px;
+    right: 0;
+    z-index: -1;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+
+}
+
+.ourServicesSec,
+.ourServices p {
+    font-family: $font-poppins;
+    color: $secoundry-color;
+    font-weight: 500;
+    font-size: clamp(13px, 5vw, 20px);
+}
+
+.fatherImg {
+    position: relative;
+}
+
+.ctafather {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 12%;
+}
+
+.mainBanner {
+    position: relative;
+    /* height: 100vh; */
+}
+
+.bannerBoy {
+    width: 100%;
+    max-width: 14%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0px;
+}
+
+.navbar-expand-md .navbar-collapse {
+    margin-top: 20px;
+}
+
+.contactSe p:first-child {
+    font-family: $font-poppins;
+    font-weight: 500;
+    color: $black-color;
+    font-size: clamp(15px, 2vw, 36px);
+}
+
+.contactSe p:last-child {
+    font-family: $font-poppins;
+    font-weight: 400;
+    color: $black-color;
+    font-size: clamp(15px, 2vw, 36px);
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+.form-control {
+    border: 2px solid $secoundry-color !important;
+    border-radius: 10px;
+    line-height: 2.5;
+}
+
+input::placeholder {
+    color: rgba(115, 115, 115, 1) !important;
+}
+
+.form-label {
+    color: $black-color;
+    font-family: $font-poppins;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.form-control .iti {
+    width: 100%;
+}
+
+.iti {
+    width: 100% !important;
+    /* Ensure that the intl-tel-input takes full width */
+}
+
+.invalid {
+    border: 5px solid red;
+}
+
+.memoriesContent h1 {
+    font-family: $font-poppins;
+    font-size: clamp(18px, 3vw, 36px); 
+    font-weight: 900;
+    color: $secoundry-color;
+
+}
+
+.memoriesContent p {
+    font-family: $font-poppins;
+    font-size: clamp(18px, 2vw, 20px);
+    font-weight: 400;
+    color: $secoundry-color;
+
+}
+
+.btnCont {
+    background-color: $primary-color;
+    font-family: $font-poppins;
+    font-weight: bold;
+    color: $white-color;
+    border-radius: 0px !important;
+    font-size: clamp(14px, 3vw, 22px);
+    position: relative;
+    z-index: 1;
+
+}
+
+.btnCont::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -9px;
+    width: 100%;
+    height: 48px;
+    z-index: -1;
+    border-radius: 0px;
+    border: 2px solid $primary-color;
+    transition: all 0.5s;
+
+}
+
+.btnCont:hover::before{
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    box-shadow: 0px 0px 20px 0px $primary-color;
+    
+}
+.btnCont:hover{
+    background-color: $primary-color;
+    color: $white-color;
+    z-index: 1;
+}
+.btnCont:active{
+    background-color: $primary-color !important;
+    color: $white-color !important;
+    z-index: 1;
+}
+.transparent {
+    background-color: $white-color;
+    font-family: $font-poppins;
+    font-weight: bold;
+    color: $primary-color;
+   border-radius: 0px !important;
+    font-size: clamp(14px, 3vw, 22px);
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+
+
+}
+.transparent::before {  
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -9px;
+    width: 100%;
+    height: 48px;
+    z-index: -1;
+    border-radius: 0px;
+    border: 2px solid  $white-color;
+    transition: all 0.5s;
+}
+
+.transparent:hover::before{
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    box-shadow: 0px 0px 20px 0px $white-color;
+    
+}
+.transparent:hover{
+    background-color: $white-color;
+    color: $primary-color;
+    z-index: 1;
+}
+.transparent:active{
+    background-color: $white-color !important;
+    color: $primary-color !important;
+    z-index: 1;
+}
+.firstImage{
+    transition: 0.5s;
+    border-radius: 38px;
+    box-shadow: 0px 0px 20px 0px #626785;
+ 
+    
+}
+.firstImage:hover{
+    transform: rotate(-3deg);
+    box-shadow: none;
+    
+}
+.secoundImage img{
+    transition: 0.5s;
+    border-radius: 38px;    
+    box-shadow: 0px 0px 20px 0px #626785;
+}
+.secoundImage img:hover{
+    transform: rotate(-3deg);
+    box-shadow: none;
+    
+}
+.ourSecImg{
+    overflow: hidden;
+}
+.ourSecImg img{
+    transition: 0.5s;
+}
+.ourSecImg img:hover{
+    transform: scale(1.1);
+   
+}
+.whyImg{
+    overflow: hidden;
+}
+.whyImg img{
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 0px #a39696; 
+    
+}
+.whyImg img:hover{
+transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px #a39696; 
+
+}
+.sideTruck img{
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 0px #2f77c161;
+    border-top-right-radius: 83px;
+    border-bottom-right-radius: 83px;   
+}
+
+.doubleImg, .doubleImgSEc{
+    box-shadow: 0px 0px 20px 0px #a8a1b9;
+    border-radius: 48px;
+    overflow: hidden;
+
+}
+.doubleImg img{
+    transition: all 0.5s;
+}
+.doubleImgSEc img{
+    transition: all 0.5s;
+}
+.doubleImg img:hover{
+    transform: scale(1.1);
+}.doubleImgSEc img:hover{
+    transform: scale(1.1);
+}
+figure img{
+ 
+    border-radius: 77px;
+    box-shadow: 0px 0px 20px 0px #d5caca; 
+
+}
+figure:hover{
+    opacity: 1;
+   
+    
+}
